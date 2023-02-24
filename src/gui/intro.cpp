@@ -157,6 +157,13 @@ void FurnaceGUI::drawIntro(double introTime, bool monitor) {
         drawImage(dl,GUI_IMAGE_INTROBG,ImVec2(0.7,0.25-(introTime)*0.03),ImVec2(20.0,20.0),0.0,ImVec2(0.0,0.0),ImVec2(1.0,1.0),ImVec4(0.7,1.0,0.7,0.1*CLAMP(introTime*3.0,0.0,1.0)*bgAlpha));
 
         drawImage(dl,GUI_IMAGE_LOGO,ImVec2(0.5,0.5+pow(1.0-CLAMP(introTime*2.0,0.0,1.0),4.0)*0.125),ImVec2(0.67,0.67),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,1.0),ImVec4(1.0,1.0,1.0,CLAMP(introTime*3.0,0.0,1.0)*bgAlpha));
+
+
+        dl->AddText(
+          ImVec2(8.0*dpiScale,8.0*dpiScale),
+          ImGui::GetColorU32(ImVec4(1.0,1.0,1.0,bgAlpha)),
+          "Furnace " DIV_VERSION
+        );
       } else {
         // preload textures
         getTexture(GUI_IMAGE_TALOGO);
@@ -181,20 +188,29 @@ void FurnaceGUI::drawIntro(double introTime, bool monitor) {
 
           // part 1 - talogo
           if (introTime<2.3) {
-            drawImage(dl,GUI_IMAGE_TALOGO,ImVec2(0.5,0.5),ImVec2(0.67,0.67),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,1.0),ImVec4(1.0,1.0,1.0,MAX(0.01,1.0-pow(MAX(0.0,1.0-introTime*2.0),3.0))));
+            drawImage(dl,GUI_IMAGE_TALOGO,ImVec2(0.5,0.5),ImVec2(0.34+(introTime*.1),0.34+(introTime*.1)),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,1.0),ImVec4(1.0,1.0,1.0,MAX(0.01,1.0-pow(MAX(0.0,1.0-introTime*2.0),2.3))));
 
             for (int i=0; i<16; i++) {
-              double chipCenter=0.22+pow(MAX(0.0,1.5-introTime*0.8-((double)i/36.0)),2.0)+pow(sin(-introTime*2.2-(double)i*0.44),24)*0.05;
+              double chipCenter=0.17+pow(MAX(0.0,1.5-introTime*0.8-((double)i/36.0)),2.0)+pow(sin(-introTime*2.2-(double)i*0.44),24)*0.05;
               ImVec2 chipPos=ImVec2(
                 0.5+chipCenter*cos(2.0*M_PI*(double)i/16.0-pow(introTime,2.2)),
                 0.5+chipCenter*sin(2.0*M_PI*(double)i/16.0-pow(introTime,2.2))
               );
-              drawImage(dl,GUI_IMAGE_TACHIP,chipPos,ImVec2(0.25,0.25),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,0.5),ImVec4(1.0,1.0,1.0,1.0));
+              drawImage(dl,GUI_IMAGE_TACHIP,chipPos,ImVec2(0.18,0.18),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,0.5),ImVec4(1.0,1.0,1.0,1.0));
+            }
+
+            for (int i=0; i<16; i++) {
+              double chipCenter=0.24+pow(MAX(0.0,1.5-(introTime-.2)*0.8-((double)i/36.0)),2.0);
+              ImVec2 chipPos=ImVec2(
+                0.5+chipCenter*sin(2.0*M_PI*(double)i/16.0-pow(introTime,1.8)),
+                0.5+chipCenter*cos(2.0*M_PI*(double)i/16.0-pow(introTime,1.8))
+              );
+              drawImage(dl,GUI_IMAGE_TACHIP,chipPos,ImVec2(0.18,0.18),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,0.5),ImVec4(1.0,1.0,1.0,1.0));
             }
           }
 
           // background after part 1
-          if (introTime>2.3) {
+          if (introTime>2.3 && introTime<6.24) {
             float s1a=CLAMP((introTime-3.2)*1.3,0.0f,1.0f);
             float s2a=CLAMP((introTime-4.5)*1.0,0.0f,1.0f);
             float addition=(3*pow(s1a,2)-2*pow(s1a,3)+(3*pow(s2a,2)-2*pow(s2a,3))*1.5)*3.5;
@@ -254,8 +270,19 @@ void FurnaceGUI::drawIntro(double introTime, bool monitor) {
               top.x+(transitionPos-1.7)*(bottom.x-top.x),
               bottom.y
             ),
-            ImGui::GetColorU32(ImVec4(0.35,0.4,0.5,1.0))
+            ImGui::GetColorU32(ImVec4(.35,.4,.5,
+              1.0 - CLAMP( -(introTime>2.36?2.36-introTime:introTime-2.36)*2, 0, 1 )
+            ))
           );
+
+          // flashing background
+          if (introTime > 6.24) {
+            dl->AddRectFilled(top,bottom,
+              ImGui::GetColorU32(ImVec4(.35,.4,.5,
+                1.0 - CLAMP( (introTime-6.24), 0, 1)
+              ))
+            );
+          }
 
           // part 3 - falling chips
           if (introTime>3.0 && introTime<6.0) {
@@ -274,14 +301,28 @@ void FurnaceGUI::drawIntro(double introTime, bool monitor) {
             drawImage(
               dl,
               GUI_IMAGE_WORDMARK,
-              ImVec2(0.36+0.3*(1.0-pow(1.0-CLAMP(introTime-6.0,0.0,1.0),6.0)),0.5+pow(1.0-CLAMP(introTime-5.0,0.0,1.0),4.0)),
-              ImVec2(1.0,1.0),
+              ImVec2(0.36+0.28*(1.0-pow(1.0-CLAMP(introTime-6.0,0.0,1.0),6.0)),0.5+pow(1.0-CLAMP(introTime-5.0,0.0,1.0),4.0)),
+              ImVec2(.8,.8),
               0.0f,
               ImVec2(pow(1.0-CLAMP(introTime-6.0,0.0,1.0),8.0),0.0),
               ImVec2(1.0,1.0),
               ImVec4(1.0,1.0,1.0,bgAlpha)
             );
-            drawImage(dl,GUI_IMAGE_LOGO,ImVec2(0.5-0.25*(1.0-pow(1.0-CLAMP(introTime-6.0,0.0,1.0),6.0)),0.5+pow(1.0-CLAMP(introTime-5.0,0.0,1.0),4.0)),ImVec2(0.67,0.67),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,1.0),ImVec4(1.0,1.0,1.0,bgAlpha));
+            drawImage(dl,GUI_IMAGE_LOGO,ImVec2(0.5-0.22*(1.0-pow(1.0-CLAMP(introTime-6.0,0.0,1.0),6.0)),0.5+pow(1.0-CLAMP(introTime-5.0,0.0,1.0),4.0)),ImVec2(0.67*.8,0.67*.8),0.0f,ImVec2(0.0,0.0),ImVec2(1.0,1.0),ImVec4(1.0,1.0,1.0,bgAlpha));
+          }
+
+
+          if (introTime > 6.24) {
+            drawImage(
+              dl,
+              GUI_IMAGE_INTROBG,
+              ImVec2(0,(introTime-6.24-3)*-1),
+              ImVec2(40.0,40.0),
+              0.0,
+              ImVec2(0.0,0.0),
+              ImVec2(1.0,1.0),
+              ImVec4(.35,.6,.7,.5*bgAlpha)
+            );
           }
         }
 
@@ -300,8 +341,13 @@ void FurnaceGUI::drawIntro(double introTime, bool monitor) {
           }
 
           dl->AddRectFilled(top,bottom,ImGui::GetColorU32(ImVec4(0.0,0.0,0.0,CLAMP(introSkip*2.0,0.0,1.0)-CLAMP((introSkip-0.5)*4,0.0,1.0))));
-          if (introSkip<0.5) dl->AddText(ImVec2(8.0*dpiScale,8.0*dpiScale),ImGui::GetColorU32(ImVec4(1.0,1.0,1.0,CLAMP(introSkip*8.0,0.0,1.0))),"hold to skip");
+          if (introSkip<0.5) dl->AddText(ImVec2(8.0*dpiScale,(8.0+4.0+ImGui::GetDrawListSharedData()->FontSize)*dpiScale),ImGui::GetColorU32(ImVec4(1.0,1.0,1.0,CLAMP(introSkip*8.0,0.0,1.0))),"(hold to skip)");
         }
+        dl->AddText(
+          ImVec2(8.0*dpiScale,8.0*dpiScale),
+          ImGui::GetColorU32(ImVec4(1.0,1.0,1.0,CLAMP(11.0-introTime,0.0,1.0))),
+          "Furnace " DIV_VERSION
+        );
       }
 
       if (monitor) dl->PopClipRect();
