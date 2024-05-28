@@ -146,7 +146,7 @@ msgstr "EAxx: Legato"
 
 #: src/engine/engine.cpp:120
 msgid "EBxx: Set LEGACY sample mode bank"
-msgstr "EBxx: Atur bank moda sampel HANYA UNTUK KOMPATIBILITAS"
+msgstr "EBxx: Atur bank dari sampel HANYA UNTUK KOMPATIBILITAS"
 
 #: src/engine/engine.cpp:122
 msgid "ECxx: Note cut"
@@ -222,7 +222,7 @@ msgstr "FFxx: Hentikan lagu"
 
 #: src/engine/engine.cpp:160
 msgid "9xxx: Set sample offset*256"
-msgstr "9xxx: Atur titik mulai sampel×256"
+msgstr "9xxx: Atur titik mulai sampelx256"
 
 #: src/engine/engine.cpp:164
 msgid "90xx: Set sample offset (first byte)"
@@ -230,11 +230,11 @@ msgstr "90xx: Atur titik mulai sampel (byte pertama)"
 
 #: src/engine/engine.cpp:166
 msgid "91xx: Set sample offset (second byte, ×256)"
-msgstr "91xx: Atur titik mulai sampel (byte kedua, ×256)"
+msgstr "91xx: Atur titik mulai sampel (byte kedua, x256)"
 
 #: src/engine/engine.cpp:168
 msgid "92xx: Set sample offset (third byte, ×65536)"
-msgstr "92xx: Atur titik mulai sampel (byte ketiga, ×256)"
+msgstr "92xx: Atur titik mulai sampel (byte ketiga, x65536)"
 
 #: src/engine/engine.cpp:187 src/gui/settings.cpp:4069
 msgid "Invalid effect"
@@ -253,7 +253,7 @@ msgstr ""
 #: src/engine/engine.cpp:368 src/engine/engine.cpp:2768 src/gui/gui.cpp:2273
 #: src/gui/gui.cpp:2436 src/gui/settings.cpp:5749
 msgid "file is empty"
-msgstr ""
+msgstr "file kosong"
 
 #: src/engine/engine.cpp:371 src/gui/gui.cpp:2276 src/gui/gui.cpp:2439
 #, c-format
@@ -295,30 +295,30 @@ msgstr ""
 
 #: src/engine/engine.cpp:1286
 msgid "cannot remove the last one"
-msgstr ""
+msgstr "sistem terakhir tak bisa dihapus"
 
 #: src/engine/engine.cpp:1460
 msgid "source and destination are equal"
-msgstr ""
+msgstr "sumber dan tujuan adalah sama"
 
 #: src/engine/engine.cpp:1464
 msgid "invalid source index"
-msgstr ""
+msgstr "indeks sumber tidak benar"
 
 #: src/engine/engine.cpp:1468
 msgid "invalid destination index"
-msgstr ""
+msgstr "indeks tujuan tidak benar"
 
 #: src/engine/engine.cpp:2636
 #, c-format
 msgid "Instrument %d"
-msgstr ""
+msgstr "Instrumen %d"
 
 #: src/engine/engine.cpp:2710 src/engine/engine.cpp:2727
 #: src/gui/doAction.cpp:825 src/gui/doAction.cpp:843 src/gui/doAction.cpp:1634
 #: src/gui/gui.cpp:6153 src/gui/insEdit.cpp:6860
 msgid "too many wavetables!"
-msgstr ""
+msgstr "terlalu banyak gelombang terdefinisi!"
 
 #: src/engine/engine.cpp:2752
 #, c-format
@@ -876,7 +876,7 @@ msgstr ""
 #: src/engine/sysDef.cpp:1893 src/engine/sysDef.cpp:2063
 #: src/engine/sysDef.cpp:2077
 msgid "10xx: Set waveform"
-msgstr "10xx: Atur pola wave"
+msgstr "10xx: Atur bentuk gelombang"
 
 #: src/engine/sysDef.cpp:626
 msgid "20xx: Set PCM frequency"
@@ -3825,7 +3825,7 @@ msgstr ""
 
 #: src/gui/channels.cpp:49
 msgid "Pat"
-msgstr "Pola"
+msgstr "Pol"
 
 #: src/gui/channels.cpp:51 src/gui/editControls.cpp:550
 msgid "Osc"
@@ -3833,7 +3833,7 @@ msgstr "Osc"
 
 #: src/gui/channels.cpp:53
 msgid "Swap"
-msgstr "Tukar"
+msgstr "Tkr"
 
 #: src/gui/channels.cpp:55 src/gui/effectList.cpp:45 src/gui/insEdit.cpp:5288
 #: src/gui/sampleEdit.cpp:195 src/gui/settings.cpp:1007
@@ -3844,11 +3844,11 @@ msgstr "Nama"
 
 #: src/gui/channels.cpp:64
 msgid "Show in pattern"
-msgstr ""
+msgstr "Tampilkan pada pola"
 
 #: src/gui/channels.cpp:71
 msgid "Show in per-channel oscilloscope"
-msgstr ""
+msgstr "Tampilkan pada osiloskop per-channel"
 
 #: src/gui/channels.cpp:82
 #, c-format
@@ -3856,31 +3856,33 @@ msgid ""
 "%s #%d\n"
 "(drag to swap channels)"
 msgstr ""
+"%s #%d\n"
+"(tarik untuk tukar channel)"
 
 #: src/gui/commandPalette.cpp:51 src/gui/newSong.cpp:133
 #: src/gui/sysPicker.cpp:35
 msgid "Search..."
-msgstr ""
+msgstr "Cari..."
 
 #: src/gui/commandPalette.cpp:54
 msgid "Search recent files..."
-msgstr ""
+msgstr "Cari file terakhir..."
 
 #: src/gui/commandPalette.cpp:57
 msgid "Search instruments..."
-msgstr ""
+msgstr "Cari instrumen..."
 
 #: src/gui/commandPalette.cpp:60
 msgid "Search samples..."
-msgstr ""
+msgstr "Cari sampel..."
 
 #: src/gui/commandPalette.cpp:63
 msgid "Search instruments (to change to)..."
-msgstr ""
+msgstr "Cari instrumen (untuk menggantikan)..."
 
 #: src/gui/commandPalette.cpp:66
 msgid "Search chip (to add)..."
-msgstr ""
+msgstr "Cari chip (untuk ditambahkan)"
 
 #: src/gui/commandPalette.cpp:93 src/gui/commandPalette.cpp:167
 msgid "- None -"
@@ -4305,7 +4307,7 @@ msgstr ""
 #: src/gui/exportOptions.cpp:84 src/gui/gui.cpp:6186 src/gui/insEdit.cpp:518
 #: src/gui/sysConf.cpp:1870 src/gui/waveEdit.cpp:37
 msgid "None"
-msgstr ""
+msgstr "Tidak Ada"
 
 #: src/gui/compatFlags.cpp:223
 msgid "like ProTracker/FamiTracker"
@@ -4588,12 +4590,12 @@ msgstr ""
 
 #: src/gui/dataList.cpp:136 src/gui/dataList.cpp:260
 msgid "duplicate"
-msgstr ""
+msgstr "duplikasi"
 
 #: src/gui/dataList.cpp:139 src/gui/dataList.cpp:263 src/gui/dataList.cpp:388
 #: src/gui/dataList.cpp:731 src/gui/dataList.cpp:867
 msgid "replace..."
-msgstr ""
+msgstr "ganti..."
 
 #: src/gui/dataList.cpp:142 src/gui/dataList.cpp:266 src/gui/gui.cpp:4232
 msgid "save"
@@ -4615,11 +4617,11 @@ msgstr ""
 
 #: src/gui/dataList.cpp:254
 msgid "make instrument"
-msgstr ""
+msgstr "jadikan instrumen"
 
 #: src/gui/dataList.cpp:257
 msgid "make me a drum kit"
-msgstr ""
+msgstr "jadikan drum kit"
 
 #: src/gui/dataList.cpp:312 src/gui/dataList.cpp:714 src/gui/dataList.cpp:846
 #: src/gui/insEdit.cpp:520 src/gui/subSongs.cpp:88
@@ -4636,96 +4638,96 @@ msgstr "Duplikasi"
 #: src/gui/insEdit.cpp:5304 src/gui/sampleEdit.cpp:122
 #: src/gui/sampleEdit.cpp:171 src/gui/waveEdit.cpp:435 src/gui/waveEdit.cpp:467
 msgid "Open"
-msgstr ""
+msgstr "Buka"
 
 #: src/gui/dataList.cpp:363
 msgid "replace instrument..."
-msgstr ""
+msgstr "ganti instrumen..."
 
 #: src/gui/dataList.cpp:366
 msgid "load instrument from TX81Z"
-msgstr ""
+msgstr "buka instrumen dari TX81Z"
 
 #: src/gui/dataList.cpp:372
 msgid "replace wavetable..."
-msgstr ""
+msgstr "ganti gelombang..."
 
 #: src/gui/dataList.cpp:378
 msgid "replace sample..."
-msgstr ""
+msgstr "ganti sampel..."
 
 #: src/gui/dataList.cpp:381
 msgid "import raw sample..."
-msgstr ""
+msgstr "impor sampel langsung/raw..."
 
 #: src/gui/dataList.cpp:384
 msgid "import raw sample (replace)..."
-msgstr ""
+msgstr "impor dan ganti sampel langsung/raw..."
 
 #: src/gui/dataList.cpp:392
 msgid "load from TX81Z"
-msgstr ""
+msgstr "ambil dari TX81Z"
 
 #: src/gui/dataList.cpp:399
 msgid "Open (insert; right-click to replace)"
-msgstr ""
+msgstr "Buka (tambah; klik kanan untuk menggantikan)"
 
 #: src/gui/dataList.cpp:420 src/gui/dataList.cpp:741 src/gui/dataList.cpp:884
 #: src/gui/editControls.cpp:502 src/gui/insEdit.cpp:5311
 #: src/gui/sampleEdit.cpp:184 src/gui/waveEdit.cpp:474
 msgid "Save"
-msgstr ""
+msgstr "Simpan"
 
 #: src/gui/dataList.cpp:424
 msgid "save instrument as .dmp..."
-msgstr ""
+msgstr "simpan instrumen sebagai .dmp..."
 
 #: src/gui/dataList.cpp:430
 msgid "save wavetable as .dmw..."
-msgstr ""
+msgstr "simpan gelombang sebagai .dmw..."
 
 #: src/gui/dataList.cpp:433
 msgid "save raw wavetable..."
-msgstr ""
+msgstr "simpan gelombang raw..."
 
 #: src/gui/dataList.cpp:439
 msgid "save raw sample..."
-msgstr ""
+msgstr "simpan sampel raw..."
 
 #: src/gui/dataList.cpp:443 src/gui/insEdit.cpp:5314
 msgid "save as .dmp..."
-msgstr ""
+msgstr "simpan sebagai .dmp..."
 
 #: src/gui/dataList.cpp:456 src/gui/dataList.cpp:761 src/gui/dataList.cpp:903
 msgid "Toggle folders/standard view"
-msgstr ""
+msgstr "Nyala/matikan tampilan folder/standar"
 
 #: src/gui/dataList.cpp:478 src/gui/dataList.cpp:769 src/gui/dataList.cpp:911
 #: src/gui/subSongs.cpp:55
 msgid "Move up"
-msgstr ""
+msgstr "Geser ke atas"
 
 #: src/gui/dataList.cpp:499 src/gui/dataList.cpp:776 src/gui/dataList.cpp:918
 #: src/gui/subSongs.cpp:62
 msgid "Move down"
-msgstr ""
+msgstr "Geser ke bawah"
 
 #: src/gui/dataList.cpp:510 src/gui/dataList.cpp:787 src/gui/dataList.cpp:929
 msgid "Create"
-msgstr ""
+msgstr "Buat"
 
 #: src/gui/dataList.cpp:540 src/gui/dataList.cpp:797 src/gui/dataList.cpp:939
 msgid "New folder"
-msgstr ""
+msgstr "Folder baru"
 
 #: src/gui/dataList.cpp:549 src/gui/dataList.cpp:947
 msgid "Preview (right click to stop)"
-msgstr ""
+msgstr "Pratinjau (klik kanan untuk berhenti)"
 
 #: src/gui/dataList.cpp:576 src/gui/dataList.cpp:807 src/gui/dataList.cpp:959
 #: src/gui/guiConst.cpp:666 src/gui/sampleEdit.cpp:1105
 msgid "Delete"
-msgstr ""
+msgstr "Hapus"
 
 #: src/gui/dataList.cpp:593 src/gui/gui.cpp:5908
 msgid "Instruments"
@@ -4733,15 +4735,15 @@ msgstr "Instrumen"
 
 #: src/gui/dataList.cpp:608 src/gui/dataList.cpp:985 src/gui/dataList.cpp:1031
 msgid "<uncategorized>"
-msgstr ""
+msgstr "<tidak dikategorikan>"
 
 #: src/gui/dataList.cpp:614 src/gui/dataList.cpp:991 src/gui/dataList.cpp:1037
 msgid "rename..."
-msgstr ""
+msgstr "namai ulang..."
 
 #: src/gui/dataList.cpp:663 src/gui/gui.cpp:5917
 msgid "Wavetables"
-msgstr "Pola Wave"
+msgstr "Gelombang"
 
 #: src/gui/dataList.cpp:674 src/gui/gui.cpp:5926 src/gui/sampleEdit.cpp:898
 #: src/gui/sampleEdit.cpp:1072 src/gui/xyOsc.cpp:68
@@ -4750,20 +4752,20 @@ msgstr "Sampel"
 
 #: src/gui/dataList.cpp:745 src/gui/waveEdit.cpp:477
 msgid "save as .dmw..."
-msgstr ""
+msgstr "simpan sebagai .dmw..."
 
 #: src/gui/dataList.cpp:748 src/gui/dataList.cpp:891 src/gui/sampleEdit.cpp:187
 #: src/gui/waveEdit.cpp:480
 msgid "save raw..."
-msgstr ""
+msgstr "simpan raw..."
 
 #: src/gui/dataList.cpp:871 src/gui/sampleEdit.cpp:174
 msgid "import raw..."
-msgstr ""
+msgstr "impor raw..."
 
 #: src/gui/dataList.cpp:874
 msgid "import raw (replace)..."
-msgstr ""
+msgstr "impor raw (gantikan)..."
 
 #: src/gui/debugWindow.cpp:662
 msgid "This is a language test."
@@ -4929,7 +4931,7 @@ msgstr "balikkan"
 
 #: src/gui/editControls.cpp:73 src/gui/gui.cpp:2800 src/gui/gui.cpp:2960
 msgid "interpolate"
-msgstr ""
+msgstr "interpolasi"
 
 #: src/gui/editControls.cpp:74 src/gui/gui.cpp:2812 src/gui/insEdit.cpp:7610
 msgid "scale"
@@ -4999,7 +5001,7 @@ msgstr ""
 #: src/gui/editControls.cpp:442 src/gui/findReplace.cpp:788
 #: src/gui/guiConst.cpp:230
 msgid "Song"
-msgstr ""
+msgstr "Lagu"
 
 #: src/gui/editControls.cpp:446 src/gui/gui.cpp:6274 src/gui/guiConst.cpp:601
 msgid "Channels"
@@ -5007,7 +5009,7 @@ msgstr "Channel"
 
 #: src/gui/editControls.cpp:450 src/gui/sampleEdit.cpp:494
 msgid "Chips"
-msgstr ""
+msgstr "Chip"
 
 #: src/gui/editControls.cpp:454 src/gui/guiConst.cpp:593 src/gui/mixer.cpp:228
 msgid "Mixer"
@@ -5015,11 +5017,11 @@ msgstr ""
 
 #: src/gui/editControls.cpp:487 src/gui/guiConst.cpp:531
 msgid "New"
-msgstr ""
+msgstr "Baru"
 
 #: src/gui/editControls.cpp:507
 msgid "Save as..."
-msgstr ""
+msgstr "Simpan sebagai..."
 
 #: src/gui/editControls.cpp:512 src/gui/exportOptions.cpp:115
 #: src/gui/exportOptions.cpp:217 src/gui/exportOptions.cpp:246
@@ -5029,19 +5031,19 @@ msgstr ""
 #: src/gui/settings.cpp:2499 src/gui/settings.cpp:3742
 #: src/gui/userPresets.cpp:523
 msgid "Export"
-msgstr ""
+msgstr "Ekspor"
 
 #: src/gui/editControls.cpp:516 src/gui/gui.cpp:1680
 msgid "Restore Backup"
-msgstr ""
+msgstr "Ambil dari Backup"
 
 #: src/gui/editControls.cpp:524
 msgid "Song Info"
-msgstr ""
+msgstr "Info Lagu"
 
 #: src/gui/editControls.cpp:528 src/gui/guiConst.cpp:608
 msgid "Subsongs"
-msgstr ""
+msgstr "Sublagu"
 
 #: src/gui/editControls.cpp:532 src/gui/guiConst.cpp:232
 #: src/gui/guiConst.cpp:581 src/gui/insEdit.cpp:2028 src/gui/insEdit.cpp:5693
@@ -5288,15 +5290,15 @@ msgstr "Chip pada kursor: %s"
 
 #: src/gui/effectList.cpp:21
 msgid "Search"
-msgstr ""
+msgstr "Cari"
 
 #: src/gui/effectList.cpp:25
 msgid "Effect types to show:"
-msgstr ""
+msgstr "Jenis efek yang ingin dilihat:"
 
 #: src/gui/effectList.cpp:32 src/gui/exportOptions.cpp:78 src/gui/gui.cpp:6180
 msgid "All"
-msgstr ""
+msgstr "Semua"
 
 #: src/gui/effectList.cpp:47
 msgid "Description"
@@ -5308,23 +5310,23 @@ msgstr ""
 
 #: src/gui/exportOptions.cpp:29
 msgid "Export type:"
-msgstr ""
+msgstr "Tipe ekspor:"
 
 #: src/gui/exportOptions.cpp:32
 msgid "one file"
-msgstr ""
+msgstr "satu file"
 
 #: src/gui/exportOptions.cpp:35
 msgid "multiple files (one per chip)"
-msgstr ""
+msgstr "banyak file (satu per chip)"
 
 #: src/gui/exportOptions.cpp:38
 msgid "multiple files (one per channel)"
-msgstr ""
+msgstr "banyak file (satu per channel)"
 
 #: src/gui/exportOptions.cpp:44
 msgid "Bit depth:"
-msgstr ""
+msgstr "Kedalaman bit:"
 
 #: src/gui/exportOptions.cpp:46
 msgid "16-bit integer"
@@ -5336,30 +5338,30 @@ msgstr ""
 
 #: src/gui/exportOptions.cpp:55 src/gui/gui.cpp:6264 src/gui/settings.cpp:1299
 msgid "Sample rate"
-msgstr ""
+msgstr "Laju sampel"
 
 #: src/gui/exportOptions.cpp:61
 msgid "Channels in file"
-msgstr ""
+msgstr "Channel dalam file"
 
 #: src/gui/exportOptions.cpp:67 src/gui/settings.cpp:877
 msgid "Loops"
-msgstr ""
+msgstr "Putaran"
 
 #: src/gui/exportOptions.cpp:70 src/gui/settings.cpp:882
 msgid "Fade out (seconds)"
-msgstr ""
+msgstr "Fade out (detik)"
 
 #: src/gui/exportOptions.cpp:76
 msgid "Channels to export:"
-msgstr ""
+msgstr "Channel untuk diekspor:"
 
 #: src/gui/exportOptions.cpp:90 src/gui/insEdit.cpp:519 src/gui/mixer.cpp:250
 #: src/gui/sampleEdit.cpp:1128 src/gui/settings.cpp:1027
 #: src/gui/settings.cpp:1041 src/gui/userPresets.cpp:393
 #: src/gui/userPresets.cpp:405 src/gui/waveEdit.cpp:1096
 msgid "Invert"
-msgstr ""
+msgstr "Balikkan"
 
 #: src/gui/exportOptions.cpp:130
 msgid "select at least one channel"
@@ -6048,6 +6050,11 @@ msgid ""
 "DO NOT RELY ON THE BACKUP SYSTEM FOR AUTO-SAVE!\n"
 "Furnace will not save backups of backups."
 msgstr ""
+"kamu telah mengambil backup!\n"
+"jika diperlukan, simpanlah di tempat yang diinginkan.\n"
+"\n"
+"JANGAN BERGANTUNG PADA SISTEM BACKUP UNTUK PENYIMPANAN OTOMATIS!\n"
+"Furnace tidak akan menyimpan backup dari backup."
 
 #: src/gui/gui.cpp:2342 src/gui/gui.cpp:3743 src/gui/gui.cpp:4213
 msgid "Unsaved changes! Save changes before opening file?"
@@ -6144,83 +6151,83 @@ msgstr ""
 
 #: src/gui/gui.cpp:2930
 msgid "note up"
-msgstr ""
+msgstr "naik nada"
 
 #: src/gui/gui.cpp:2931
 msgid "note down"
-msgstr ""
+msgstr "turun nada"
 
 #: src/gui/gui.cpp:2932
 msgid "octave up"
-msgstr ""
+msgstr "naik oktaf"
 
 #: src/gui/gui.cpp:2933
 msgid "octave down"
-msgstr ""
+msgstr "turun oktaf"
 
 #: src/gui/gui.cpp:2935
 msgid "values up"
-msgstr ""
+msgstr "naik nilai"
 
 #: src/gui/gui.cpp:2936
 msgid "values down"
-msgstr ""
+msgstr "turun nilai"
 
 #: src/gui/gui.cpp:2937
 msgid "values up (+16)"
-msgstr ""
+msgstr "naik nilai (+16)"
 
 #: src/gui/gui.cpp:2938
 msgid "values down (-16)"
-msgstr ""
+msgstr "turun nilai (-16)"
 
 #: src/gui/gui.cpp:2941
 msgid "transpose"
-msgstr ""
+msgstr "transpos"
 
 #: src/gui/gui.cpp:2949
 msgid "Notes"
-msgstr ""
+msgstr "Nada"
 
 #: src/gui/gui.cpp:2954
 msgid "Values"
-msgstr ""
+msgstr "Nilai"
 
 #: src/gui/gui.cpp:2961
 msgid "change instrument..."
-msgstr ""
+msgstr "ganti instrumen..."
 
 #: src/gui/gui.cpp:2974
 msgid "gradient/fade..."
-msgstr ""
+msgstr "gradien/fade..."
 
 #: src/gui/gui.cpp:2975 src/gui/sampleEdit.cpp:695
 msgid "Start"
-msgstr ""
+msgstr "Nilai awal"
 
 #: src/gui/gui.cpp:2983 src/gui/sampleEdit.cpp:731
 msgid "End"
-msgstr ""
+msgstr "Nilai akhir"
 
 #: src/gui/gui.cpp:2991 src/gui/gui.cpp:3036
 msgid "Nibble mode"
-msgstr ""
+msgstr "Mode nibble"
 
 #: src/gui/gui.cpp:3000
 msgid "Go ahead"
-msgstr ""
+msgstr "Lakukan"
 
 #: src/gui/gui.cpp:3006 src/gui/insEdit.cpp:7604
 msgid "scale..."
-msgstr ""
+msgstr "perbesar/perkecil..."
 
 #: src/gui/gui.cpp:3011
 msgid "Scale"
-msgstr ""
+msgstr "Ganti Ukuran"
 
 #: src/gui/gui.cpp:3017 src/gui/insEdit.cpp:7632
 msgid "randomize..."
-msgstr ""
+msgstr "acak..."
 
 #: src/gui/gui.cpp:3018
 msgid "Minimum"
@@ -6228,11 +6235,11 @@ msgstr ""
 
 #: src/gui/gui.cpp:3027
 msgid "Maximum"
-msgstr ""
+msgstr "Maksimum"
 
 #: src/gui/gui.cpp:3046 src/gui/settings.cpp:940 src/gui/waveEdit.cpp:1149
 msgid "Randomize"
-msgstr ""
+msgstr "Acak"
 
 #: src/gui/gui.cpp:3056
 msgid "flip selection"
@@ -6467,107 +6474,107 @@ msgstr "jendela"
 
 #: src/gui/gui.cpp:4472
 msgid "song"
-msgstr ""
+msgstr "lagu"
 
 #: src/gui/gui.cpp:4473
 msgid "song comments"
-msgstr ""
+msgstr "komentar lagu"
 
 #: src/gui/gui.cpp:4474
 msgid "song information"
-msgstr ""
+msgstr "informasi lagu"
 
 #: src/gui/gui.cpp:4475
 msgid "subsongs"
-msgstr ""
+msgstr "sublagu"
 
 #: src/gui/gui.cpp:4477
 msgid "channels"
-msgstr ""
+msgstr "manajer channel"
 
 #: src/gui/gui.cpp:4478
 msgid "chip manager"
-msgstr ""
+msgstr "manajer chip"
 
 #: src/gui/gui.cpp:4479
 msgid "orders"
-msgstr ""
+msgstr "urutan"
 
 #: src/gui/gui.cpp:4481
 msgid "pattern manager"
-msgstr ""
+msgstr "manajer pola"
 
 #: src/gui/gui.cpp:4482
 msgid "mixer"
-msgstr ""
+msgstr "mixer"
 
 #: src/gui/gui.cpp:4483
 msgid "compatibility flags"
-msgstr ""
+msgstr "pengaturan kompatibilitas"
 
 #: src/gui/gui.cpp:4486 src/gui/gui.cpp:4488
 msgid "assets"
-msgstr ""
+msgstr "aset"
 
 #: src/gui/gui.cpp:4490
 msgid "instruments"
-msgstr ""
+msgstr "instrumen"
 
 #: src/gui/gui.cpp:4491
 msgid "samples"
-msgstr ""
+msgstr "sampel"
 
 #: src/gui/gui.cpp:4492
 msgid "wavetables"
-msgstr ""
+msgstr "gelombang"
 
 #: src/gui/gui.cpp:4495
 msgid "instrument editor"
-msgstr ""
+msgstr "pengedit instrumen"
 
 #: src/gui/gui.cpp:4496
 msgid "sample editor"
-msgstr ""
+msgstr "pengedit sampel"
 
 #: src/gui/gui.cpp:4497
 msgid "wavetable editor"
-msgstr ""
+msgstr "pengedit gelombang"
 
 #: src/gui/gui.cpp:4500
 msgid "visualizers"
-msgstr ""
+msgstr "visualisasi"
 
 #: src/gui/gui.cpp:4501
 msgid "oscilloscope (master)"
-msgstr ""
+msgstr "osiloskop (keseluruhan)"
 
 #: src/gui/gui.cpp:4502
 msgid "oscilloscope (per-channel)"
-msgstr ""
+msgstr "osiloskop (per-channel)"
 
 #: src/gui/gui.cpp:4503
 msgid "oscilloscope (X-Y)"
-msgstr ""
+msgstr "osiloskop (X-Y)"
 
 #: src/gui/gui.cpp:4504
 msgid "volume meter"
-msgstr ""
+msgstr "pengukur volume"
 
 #: src/gui/gui.cpp:4507
 msgid "tempo"
-msgstr ""
+msgstr "tempo"
 
 #: src/gui/gui.cpp:4508
 msgid "clock"
-msgstr ""
+msgstr "clock"
 
 #: src/gui/gui.cpp:4509
 msgid "grooves"
-msgstr ""
+msgstr "groove"
 
 #: src/gui/gui.cpp:4510
 msgid "speed"
-msgstr ""
+msgstr "kecepatan"
 
 #: src/gui/gui.cpp:4513 src/gui/log.cpp:28
 msgid "debug"
@@ -6575,31 +6582,31 @@ msgstr ""
 
 #: src/gui/gui.cpp:4514
 msgid "log viewer"
-msgstr ""
+msgstr "tampilan log"
 
 #: src/gui/gui.cpp:4515
 msgid "register view"
-msgstr ""
+msgstr "tampilan register"
 
 #: src/gui/gui.cpp:4516
 msgid "statistics"
-msgstr ""
+msgstr "statistik"
 
 #: src/gui/gui.cpp:4517
 msgid "memory composition"
-msgstr ""
+msgstr "komposisi memori"
 
 #: src/gui/gui.cpp:4521 src/gui/gui.cpp:4529
 msgid "effect list"
-msgstr ""
+msgstr "daftar efek"
 
 #: src/gui/gui.cpp:4522
 msgid "play/edit controls"
-msgstr ""
+msgstr "kontrol pemutar/edit"
 
 #: src/gui/gui.cpp:4523
 msgid "piano/input pad"
-msgstr ""
+msgstr "papan input/piano"
 
 #: src/gui/gui.cpp:4524
 msgid "spoiler"
@@ -6699,25 +6706,25 @@ msgstr[1] "%d hari "
 
 #: src/gui/gui.cpp:4603
 msgid "Note off (cut)"
-msgstr ""
+msgstr "Lepas nada (pemotongan)"
 
 #: src/gui/gui.cpp:4605
 msgid "Note off (release)"
-msgstr ""
+msgstr "Lepas nada (pelepasan)"
 
 #: src/gui/gui.cpp:4607
 msgid "Macro release only"
-msgstr ""
+msgstr "Hanya pelepasan makro"
 
 #: src/gui/gui.cpp:4609
 #, c-format
 msgid "Note on: %s"
-msgstr ""
+msgstr "Tekan nada: %s"
 
 #: src/gui/gui.cpp:4617
 #, c-format
 msgid "Ins %d: <invalid>"
-msgstr ""
+msgstr "Ins %d: <tidak benar>"
 
 #: src/gui/gui.cpp:4620
 #, c-format
@@ -6727,16 +6734,16 @@ msgstr ""
 #: src/gui/gui.cpp:4629
 #, c-format
 msgid "Set volume: %d (%.2X, INVALID!)"
-msgstr ""
+msgstr "Ubah volume: %d (%.2X, TIDAK BENAR!)"
 
 #: src/gui/gui.cpp:4632
 #, c-format
 msgid "Set volume: %d (%.2X, %d%%)"
-msgstr ""
+msgstr "Ubah volume: %d (%.2X, %d%%)"
 
 #: src/gui/gui.cpp:4654
 msgid "| modified"
-msgstr ""
+msgstr "| diganti"
 
 #: src/gui/gui.cpp:4819 src/gui/gui.cpp:4822
 msgid "System File Dialog Pending"
@@ -7086,7 +7093,7 @@ msgstr "Perubahan belum disimpan! Simpan sebelum keluar?"
 
 #: src/gui/guiConst.cpp:127
 msgid "Generic Sample"
-msgstr ""
+msgstr "Sampel Generik"
 
 #: src/gui/guiConst.cpp:149 src/gui/settings.cpp:3978
 msgid "VRC6 (saw)"
@@ -7163,7 +7170,7 @@ msgstr ""
 #: src/gui/insEdit.cpp:7456 src/gui/insEdit.cpp:7466 src/gui/insEdit.cpp:7474
 #: src/gui/settings.cpp:3958
 msgid "Pitch"
-msgstr ""
+msgstr "Nada"
 
 #: src/gui/guiConst.cpp:229 src/gui/insEdit.cpp:6923 src/gui/insEdit.cpp:6930
 #: src/gui/insEdit.cpp:6941 src/gui/insEdit.cpp:6965 src/gui/insEdit.cpp:7067
@@ -7178,19 +7185,19 @@ msgstr ""
 
 #: src/gui/guiConst.cpp:231
 msgid "Time"
-msgstr ""
+msgstr "Waktu"
 
 #: src/gui/guiConst.cpp:233
 msgid "System (Primary)"
-msgstr ""
+msgstr "Sistem (Primer)"
 
 #: src/gui/guiConst.cpp:234
 msgid "System (Secondary)"
-msgstr ""
+msgstr "Sistem (Sekunder)"
 
 #: src/gui/guiConst.cpp:235 src/gui/settings.cpp:3857 src/gui/settings.cpp:4078
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Lain-lain"
 
 #: src/gui/guiConst.cpp:530
 msgid "---Global"
@@ -7638,15 +7645,15 @@ msgstr ""
 
 #: src/gui/guiConst.cpp:675
 msgid "Increase effect columns"
-msgstr ""
+msgstr "Perbanyak kolom efek"
 
 #: src/gui/guiConst.cpp:676
 msgid "Decrease effect columns"
-msgstr ""
+msgstr "Kurangi kolom efek"
 
 #: src/gui/guiConst.cpp:677
 msgid "Interpolate"
-msgstr ""
+msgstr "Interpolasi"
 
 #: src/gui/guiConst.cpp:678 src/gui/insEdit.cpp:530
 msgid "Fade"
@@ -8018,79 +8025,79 @@ msgstr ""
 
 #: src/gui/guiConst.cpp:780
 msgid "---Orders"
-msgstr ""
+msgstr "---Urutan"
 
 #: src/gui/guiConst.cpp:781
 msgid "Previous order"
-msgstr ""
+msgstr "Urutan sebelumnya"
 
 #: src/gui/guiConst.cpp:782
 msgid "Next order"
-msgstr ""
+msgstr "Urutan berikutnya"
 
 #: src/gui/guiConst.cpp:783
 msgid "Order cursor left"
-msgstr ""
+msgstr "Kursor urutan ke kiri"
 
 #: src/gui/guiConst.cpp:784
 msgid "Order cursor right"
-msgstr ""
+msgstr "Kursor urutan ke kanan"
 
 #: src/gui/guiConst.cpp:785
 msgid "Increase order value"
-msgstr ""
+msgstr "Tambah nilai urutan"
 
 #: src/gui/guiConst.cpp:786
 msgid "Decrease order value"
-msgstr ""
+msgstr "Kurangi nilai urutan"
 
 #: src/gui/guiConst.cpp:787
 msgid "Switch order edit mode"
-msgstr ""
+msgstr "Ganti mode edit urutan"
 
 #: src/gui/guiConst.cpp:788
 msgid "Order: toggle alter entire row"
-msgstr ""
+msgstr "Urutan: nyalakan perubahan satu baris penuh"
 
 #: src/gui/guiConst.cpp:789
 msgid "Add order"
-msgstr ""
+msgstr "Tambah urutan"
 
 #: src/gui/guiConst.cpp:790
 msgid "Duplicate order"
-msgstr ""
+msgstr "Duplikasi urutan"
 
 #: src/gui/guiConst.cpp:791
 msgid "Deep clone order"
-msgstr ""
+msgstr "Duplikasi mendalam urutan"
 
 #: src/gui/guiConst.cpp:792
 msgid "Copy current order to end of song"
-msgstr ""
+msgstr "Duplikasi urutan sekarang ke akhir lagu"
 
 #: src/gui/guiConst.cpp:793
 msgid "Deep clone current order to end of song"
-msgstr ""
+msgstr "Duplikasi mendalam urutan sekarang ke akhir lagu"
 
 #: src/gui/guiConst.cpp:794 src/gui/orders.cpp:125
 msgid "Remove order"
-msgstr ""
+msgstr "Hapus urutan"
 
 #: src/gui/guiConst.cpp:795 src/gui/orders.cpp:146
 msgid "Move order up"
-msgstr ""
+msgstr "Geser urutan ke atas"
 
 #: src/gui/guiConst.cpp:796 src/gui/orders.cpp:155
 msgid "Move order down"
-msgstr ""
+msgstr "Geser urutan ke bawah"
 
 #: src/gui/guiConst.cpp:797
 msgid "Replay order"
-msgstr ""
+msgstr "Putar kembali urutan"
 
 #: src/gui/guiConst.cpp:1392
 msgid "All chips"
-msgstr ""
+msgstr "Semua chip"
 
 #: src/gui/guiConst.cpp:1393 src/gui/settings.cpp:4033 src/gui/waveEdit.cpp:668
 msgid "FM"
@@ -8103,39 +8110,39 @@ msgstr ""
 
 #: src/gui/insEdit.cpp:39
 msgid "Down Down Down"
-msgstr ""
+msgstr "Turun Turun Turun"
 
 #: src/gui/insEdit.cpp:40
 msgid "Down."
-msgstr ""
+msgstr "Turun ."
 
 #: src/gui/insEdit.cpp:41
 msgid "Down Up Down Up"
-msgstr ""
+msgstr "Turun Naik Turun Naik"
 
 #: src/gui/insEdit.cpp:42
 msgid "Down UP"
-msgstr ""
+msgstr "Turun NAIK"
 
 #: src/gui/insEdit.cpp:43
 msgid "Up Up Up"
-msgstr ""
+msgstr "Naik Naik Naik"
 
 #: src/gui/insEdit.cpp:44
 msgid "Up."
-msgstr ""
+msgstr "Naik."
 
 #: src/gui/insEdit.cpp:45
 msgid "Up Down Up Down"
-msgstr ""
+msgstr "Naik Turun Naik Turun"
 
 #: src/gui/insEdit.cpp:46
 msgid "Up DOWN"
-msgstr ""
+msgstr "Naik TURUN"
 
 #: src/gui/insEdit.cpp:50
 msgid "Algorithm"
-msgstr ""
+msgstr "Algoritma"
 
 #: src/gui/insEdit.cpp:50
 msgid "Feedback"
@@ -8236,11 +8243,11 @@ msgstr ""
 #: src/gui/settings.cpp:3885 src/gui/settings.cpp:3940
 #: src/gui/settings.cpp:4108 src/gui/waveEdit.cpp:730
 msgid "Waveform"
-msgstr ""
+msgstr "Gelombang"
 
 #: src/gui/insEdit.cpp:50
 msgid "Scale Rate"
-msgstr ""
+msgstr "Laju Skala"
 
 #: src/gui/insEdit.cpp:50
 msgid "OP2 Half Sine"
@@ -9372,7 +9379,7 @@ msgstr ""
 #: src/gui/insEdit.cpp:5321 src/gui/sampleEdit.cpp:501
 #: src/gui/settings.cpp:1607 src/gui/settings.cpp:2219
 msgid "Type"
-msgstr ""
+msgstr "Jenis"
 
 #: src/gui/insEdit.cpp:5393
 msgid ""
@@ -10125,7 +10132,7 @@ msgstr ""
 
 #: src/gui/memory.cpp:175 src/gui/memory.cpp:176
 msgid "no chips with memory"
-msgstr ""
+msgstr "tidak ada chip dengan komposisi memori"
 
 #: src/gui/mixer.cpp:128
 msgid "input"
@@ -10198,80 +10205,81 @@ msgstr "Aku lagi beruntung"
 
 #: src/gui/newSong.cpp:230
 msgid "no categories available! what in the world."
-msgstr ""
+msgstr "tidak ada kategori! bagaimana mungkin?"
 
 #: src/gui/newSong.cpp:265
 msgid "it appears you're extremely lucky today!"
-msgstr ""
+msgstr "mungkin kamu lagi sangat beruntung hari ini!"
 
 #: src/gui/orders.cpp:114
 msgid "Add new order"
-msgstr ""
+msgstr "Tambah urutan"
 
 #: src/gui/orders.cpp:137
 msgid "Duplicate order (right-click to deep clone)"
-msgstr ""
+msgstr "Duplikasi urutan (klik kanan untuk duplikasi mendalam)"
 
 #: src/gui/orders.cpp:167
 msgid "Place copy of current order at end of song (right-click to deep clone)"
-msgstr ""
+msgstr "Tempatkan duplikat urutan sekarang pada akhir lagu (klik kanan untuk duplikasi mendalam)"
 
 #: src/gui/orders.cpp:177
 msgid "Order change mode: entire row"
-msgstr ""
+msgstr "Penggantian urutan: satu baris penuh"
 
 #: src/gui/orders.cpp:179
 msgid "Order change mode: one"
-msgstr ""
+msgstr "Penggantian urutan: satu angka saja"
 
 #: src/gui/orders.cpp:205
 msgid "Order edit mode: Select and type (scroll vertically)"
-msgstr ""
+msgstr "Mode perubahan urutan: Pilih dan ketik (geser vertikal)"
 
 #: src/gui/orders.cpp:207
 msgid "Order edit mode: Select and type (scroll horizontally)"
-msgstr ""
+msgstr "Mode perubahan urutan: Pilih dan ketik (geser horizontal)"
 
 #: src/gui/orders.cpp:209
 msgid "Order edit mode: Select and type (don't scroll)"
-msgstr ""
+msgstr "Mode perubahan urutan: Pilih dan ketik (jangan bergeser)"
 
 #: src/gui/orders.cpp:211
 msgid "Order edit mode: Click to change"
-msgstr ""
+msgstr "Mode perubahan urutan: Klik untuk ganti"
 
 #: src/gui/osc.cpp:176
 #, c-format
 msgid "zoom: %.2fx (%.1fdB)"
-msgstr ""
+msgstr "pembesaran: %.2fx (%.1fdB)"
 
 #: src/gui/osc.cpp:187
 #, c-format
 msgid "window size: %.1fms"
-msgstr ""
+msgstr "ukuran jendela: %.1fms"
 
 #: src/gui/osc.cpp:385
 msgid "(-Infinity)dB"
-msgstr ""
+msgstr "(-TakHingga)dB"
 
 #: src/gui/patManager.cpp:43
 msgid "Re-arrange patterns"
-msgstr ""
+msgstr "Tata ulang pola"
 
 #: src/gui/patManager.cpp:50
 msgid "Sort orders"
-msgstr ""
+msgstr "Urutkan pola"
 
 #: src/gui/patManager.cpp:57
 msgid "Make patterns unique"
-msgstr ""
+msgstr "Jadikan setiap pola unik"
 
 #: src/gui/patManager.cpp:103
 #, c-format
 msgid ""
 "Pattern %.2X\n"
 "- not allocated"
-msgstr ""
+msgstr "Pola %.2X\n"
+"- tidak dialokasikan"
 
 #: src/gui/patManager.cpp:105
 #, c-format
@@ -10280,116 +10288,119 @@ msgid ""
 "- use count: %d (%.0f%%)\n"
 "\n"
 "right-click to erase"
-msgstr ""
+msgstr "Pola %.2X\n"
+"- berapa kali digunakan: %d (%.0f%%)\n"
+"\n"
+"klik kanan untuk menghapus"
 
 #: src/gui/pattern.cpp:468
 msgid "there aren't any channels to show."
-msgstr ""
+msgstr "tidak ada channel untuk ditampilkan."
 
 #: src/gui/pattern.cpp:492
 msgid "click for pattern options (effect columns/pattern names/visualizer)"
-msgstr ""
+msgstr "klik untuk opsi pola (kolom efek/nama pola/visualisasi)"
 
 #: src/gui/pattern.cpp:504
 msgid "Options:"
-msgstr ""
+msgstr "Opsi:"
 
 #: src/gui/pattern.cpp:506
 msgid "Effect columns/collapse"
-msgstr ""
+msgstr "Kolom efek/sembunyikan"
 
 #: src/gui/pattern.cpp:507
 msgid "Pattern names"
-msgstr ""
+msgstr "Nama pola"
 
 #: src/gui/pattern.cpp:508
 msgid "Channel group hints"
-msgstr ""
+msgstr "Petunjuk grup channel"
 
 #: src/gui/pattern.cpp:509
 msgid "Visualizer"
-msgstr ""
+msgstr "Visualisasi"
 
 #: src/gui/pattern.cpp:517
 msgid "Channel status:"
-msgstr ""
+msgstr "Status channel:"
 
 #: src/gui/pattern.cpp:519
 msgid "No##_PCS0"
-msgstr ""
+msgstr "Tidak##_PCS0"
 
 #: src/gui/pattern.cpp:522
 msgid "Yes##_PCS1"
-msgstr ""
+msgstr "Ya##_PCS1"
 
 #: src/gui/pattern.cpp:1420 src/gui/pattern.cpp:1452
 msgid "WARNING!!"
-msgstr ""
+msgstr "PERHATIAN!!"
 
 #: src/gui/pattern.cpp:1422 src/gui/pattern.cpp:1459
 msgid "this instrument cannot be previewed because"
-msgstr ""
+msgstr "instrumen ini tidak bisa dipreview karena"
 
 #: src/gui/pattern.cpp:1423 src/gui/pattern.cpp:1466
 msgid "none of the chips can play it"
-msgstr ""
+msgstr "tidak ada chip yang bisa memainkannya"
 
 #: src/gui/pattern.cpp:1424 src/gui/pattern.cpp:1473
 msgid "your instrument is in peril!! be careful..."
-msgstr ""
+msgstr "instrumen kamu dalam bahaya!! hati-hati..."
 
 #: src/gui/piano.cpp:103
 msgid "Options"
-msgstr ""
+msgstr "Opsi"
 
 #: src/gui/piano.cpp:106
 msgid "Key layout:"
-msgstr ""
+msgstr "Tata tuts piano:"
 
 #: src/gui/piano.cpp:108 src/gui/settings.cpp:613 src/gui/settings.cpp:614
 #: src/gui/settings.cpp:1245 src/gui/settings.cpp:1246
 msgid "Automatic"
-msgstr ""
+msgstr "Otomatis"
 
 #: src/gui/piano.cpp:111
 msgid "Standard"
-msgstr ""
+msgstr "Standar"
 
 #: src/gui/piano.cpp:114
 msgid "Continuous"
-msgstr ""
+msgstr "Kontinu"
 
 #: src/gui/piano.cpp:118
 msgid "Value input pad:"
-msgstr ""
+msgstr "Papan input nilai:"
 
 #: src/gui/piano.cpp:120
 msgid "Disabled"
-msgstr ""
+msgstr "Tidak ada"
 
 #: src/gui/piano.cpp:123
 msgid "Replace piano"
-msgstr ""
+msgstr "Gantikan piano"
 
 #: src/gui/piano.cpp:126
 msgid "Split (automatic)"
-msgstr ""
+msgstr "Terbelah (otomatis)"
 
 #: src/gui/piano.cpp:129
 msgid "Split (always visible)"
-msgstr ""
+msgstr "Terbelah (selalu tampil)"
 
 #: src/gui/piano.cpp:133
 msgid "Share play/edit offset/range"
-msgstr ""
+msgstr "Offset/rentang main/edit yang sama"
 
 #: src/gui/piano.cpp:134
 msgid "Read-only (can't input notes)"
-msgstr ""
+msgstr "Baca-saja (tidak bisa menginput nada)"
 
 #: src/gui/regView.cpp:38
 msgid "- no register pool available"
-msgstr ""
+msgstr "- tidak ada pool register tersedia"
 
 #: src/gui/sampleEdit.cpp:65
 #, c-format
@@ -10662,7 +10673,7 @@ msgstr ""
 #: src/gui/sampleEdit.cpp:1010 src/gui/sampleEdit.cpp:1197
 #: src/gui/sampleEdit.cpp:1281
 msgid "Apply"
-msgstr ""
+msgstr "Terapkan"
 
 #: src/gui/sampleEdit.cpp:1046 src/gui/waveEdit.cpp:1063
 msgid "Normalize"
@@ -11365,7 +11376,7 @@ msgstr ""
 
 #: src/gui/settings.cpp:1184 src/gui/settings.cpp:4197
 msgid "Configuration"
-msgstr ""
+msgstr "Konfigurasi"
 
 #: src/gui/settings.cpp:1185 src/gui/settings.cpp:2103
 #: src/gui/settings.cpp:2495 src/gui/settings.cpp:3738
@@ -13275,7 +13286,7 @@ msgstr ""
 
 #: src/gui/settings.cpp:3969
 msgid "Amiga/Generic Sample"
-msgstr ""
+msgstr "Amiga/Sampel Generik"
 
 #: src/gui/settings.cpp:3970
 msgid "PC Engine"
@@ -13899,73 +13910,73 @@ msgstr ""
 
 #: src/gui/settings.cpp:4200
 msgid "Enable backup system"
-msgstr ""
+msgstr "Nyalakan sistem backup"
 
 #: src/gui/settings.cpp:4205
 msgid "Interval (in seconds)"
-msgstr ""
+msgstr "Interval (dalam detik)"
 
 #: src/gui/settings.cpp:4210
 msgid "Backups per file"
-msgstr ""
+msgstr "Backup per file"
 
 #: src/gui/settings.cpp:4216
 msgid "Backup Management"
-msgstr ""
+msgstr "Manajemen Backup"
 
 #: src/gui/settings.cpp:4220
 msgid "Purge before:"
-msgstr ""
+msgstr "Bersihkan sebelum:"
 
 #: src/gui/settings.cpp:4294
 msgid "Go##PDate"
-msgstr ""
+msgstr "Oke##PDate"
 
 #: src/gui/settings.cpp:4301
 #, c-format
 msgid "%<PRIu64>PB used"
-msgstr ""
+msgstr "%<PRIu64>PB terpakai"
 
 #: src/gui/settings.cpp:4303
 #, c-format
 msgid "%<PRIu64>TB used"
-msgstr ""
+msgstr "%<PRIu64>TB terpakai"
 
 #: src/gui/settings.cpp:4305
 #, c-format
 msgid "%<PRIu64>GB used"
-msgstr ""
+msgstr "%<PRIu64>GB terpakai"
 
 #: src/gui/settings.cpp:4307
 #, c-format
 msgid "%<PRIu64>MB used"
-msgstr ""
+msgstr "%<PRIu64>MB terpakai"
 
 #: src/gui/settings.cpp:4309
 #, c-format
 msgid "%<PRIu64>KB used"
-msgstr ""
+msgstr "%<PRIu64>KB terpakai"
 
 #: src/gui/settings.cpp:4311
 #, c-format
 msgid "%<PRIu64> bytes used"
-msgstr ""
+msgstr "%<PRIu64> bytes terpakai"
 
 #: src/gui/settings.cpp:4316
 msgid "Refresh"
-msgstr ""
+msgstr "Segarkan"
 
 #: src/gui/settings.cpp:4320
 msgid "Delete all"
-msgstr ""
+msgstr "Hapus semua"
 
 #: src/gui/settings.cpp:4326
 msgid "Size"
-msgstr ""
+msgstr "Ukuran"
 
 #: src/gui/settings.cpp:4327
 msgid "Latest"
-msgstr ""
+msgstr "Terbaru"
 
 #: src/gui/settings.cpp:4337
 #, c-format
@@ -14047,7 +14058,7 @@ msgstr "Batal##SettingsCancel"
 
 #: src/gui/settings.cpp:4541
 msgid "Apply##SettingsApply"
-msgstr ""
+msgstr "Terapkan##SettingsApply"
 
 #: src/gui/settings.cpp:5611
 msgid "could not initialize audio!"
@@ -14060,7 +14071,7 @@ msgstr ""
 
 #: src/gui/songInfo.cpp:50
 msgid "Author"
-msgstr "Penulis"
+msgstr "Pengarang"
 
 #: src/gui/songInfo.cpp:60
 msgid "Album"
@@ -14092,11 +14103,11 @@ msgstr "klik untuk menampilkan tempo dasar"
 
 #: src/gui/speed.cpp:80
 msgid "Groove"
-msgstr ""
+msgstr "Groove"
 
 #: src/gui/speed.cpp:87
 msgid "click for one speed"
-msgstr ""
+msgstr "klik untuk menggunakan satu kecepatan"
 
 #: src/gui/speed.cpp:90
 msgid "Speeds"
@@ -14104,11 +14115,11 @@ msgstr "Kecepatan"
 
 #: src/gui/speed.cpp:99
 msgid "click for groove pattern"
-msgstr ""
+msgstr "klik untuk menggunakan pola groove"
 
 #: src/gui/speed.cpp:110
 msgid "click for two (alternating) speeds"
-msgstr ""
+msgstr "klik untuk menggunakan dua kecepatan (secara bergantian)"
 
 #: src/gui/speed.cpp:168
 msgid "Virtual Tempo"
@@ -14180,25 +14191,25 @@ msgstr "Jenis chip:"
 
 #: src/gui/sysConf.cpp:75
 msgid "YM3438 (9-bit DAC)"
-msgstr ""
+msgstr "YM3438 (DAC 9-bit)"
 
 #: src/gui/sysConf.cpp:79
 msgid "YM2612 (9-bit DAC with distortion)"
-msgstr ""
+msgstr "YM2612 (DAC 9-bit dengan distorsi)"
 
 #: src/gui/sysConf.cpp:83
 msgid "YMF276 (external DAC)"
-msgstr ""
+msgstr "YMF276 (DAC eksternal)"
 
 #: src/gui/sysConf.cpp:90 src/gui/sysConf.cpp:804 src/gui/sysConf.cpp:1350
 #: src/gui/sysConf.cpp:1420
 msgid "Disable ExtCh FM macros (compatibility)"
-msgstr ""
+msgstr "Matikan makro ExtCh FM (kompatibilitas)"
 
 #: src/gui/sysConf.cpp:93 src/gui/sysConf.cpp:807 src/gui/sysConf.cpp:1353
 #: src/gui/sysConf.cpp:1423
 msgid "Ins change in ExtCh operator 2-4 affects FB (compatibility)"
-msgstr ""
+msgstr "Pergantian ins di operator ExtCh 2-4 mempengaruhi FB (kompatibilitas)"
 
 #: src/gui/sysConf.cpp:99
 msgid "Modified sine wave (joke)"
@@ -14219,7 +14230,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:135
 msgid "1.79MHz (Half NTSC)"
-msgstr ""
+msgstr "1.79MHz (Setengah NTSC)"
 
 #: src/gui/sysConf.cpp:139
 msgid "3MHz (Exed Exes)"
@@ -14239,7 +14250,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:162
 msgid "TI SN76489 with Atari-like short noise"
-msgstr ""
+msgstr "TI SN76489 dengan noise pendek seperti Atari"
 
 #: src/gui/sysConf.cpp:166
 msgid "Game Gear"
@@ -14259,7 +14270,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:182
 msgid "Tandy PSSJ 3-voice sound"
-msgstr ""
+msgstr "Tandy PSSJ dengan 3 suara"
 
 #: src/gui/sysConf.cpp:186
 msgid "TI SN94624"
@@ -14275,7 +14286,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:200 src/gui/sysConf.cpp:2190
 msgid "Disable easy period to note mapping on upper octaves"
-msgstr ""
+msgstr "Matikan pemetaan mudah periode ke nada pada oktaf atas"
 
 #: src/gui/sysConf.cpp:219 src/gui/sysConf.cpp:583
 msgid "Pseudo-PAL"
@@ -14283,11 +14294,11 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:222 src/gui/sysConf.cpp:342
 msgid "Disable anti-click"
-msgstr ""
+msgstr "Matikan antiklik"
 
 #: src/gui/sysConf.cpp:225 src/gui/sysConf.cpp:345
 msgid "Chip revision:"
-msgstr ""
+msgstr "Revisi chip:"
 
 #: src/gui/sysConf.cpp:227
 msgid "HuC6280 (original)"
@@ -14299,7 +14310,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:257
 msgid "CPU rate:"
-msgstr ""
+msgstr "Laju CPU:"
 
 #: src/gui/sysConf.cpp:259
 msgid "6.18MHz (NTSC)"
@@ -14311,7 +14322,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:268
 msgid "Sample memory:"
-msgstr ""
+msgstr "Banyaknya memori:"
 
 #: src/gui/sysConf.cpp:270
 msgid "8K (rev A/B/E)"
@@ -14323,7 +14334,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:279
 msgid "DAC resolution:"
-msgstr ""
+msgstr "Resolusi DAC:"
 
 #: src/gui/sysConf.cpp:281
 msgid "16-bit (rev A/B/D/F)"
@@ -14335,27 +14346,27 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:290 src/gui/sysConf.cpp:1931
 msgid "Enable echo"
-msgstr ""
+msgstr "Nyalakan echo"
 
 #: src/gui/sysConf.cpp:293
 msgid "Swap echo channels"
-msgstr ""
+msgstr "Tukar channel echo"
 
 #: src/gui/sysConf.cpp:296 src/gui/sysConf.cpp:1151
 msgid "Echo delay:"
-msgstr ""
+msgstr "Penundaan echo:"
 
 #: src/gui/sysConf.cpp:302
 msgid "Echo resolution:"
-msgstr ""
+msgstr "Resolusi echo:"
 
 #: src/gui/sysConf.cpp:308 src/gui/sysConf.cpp:1159
 msgid "Echo feedback:"
-msgstr ""
+msgstr "Feedback echo:"
 
 #: src/gui/sysConf.cpp:314 src/gui/sysConf.cpp:1967
 msgid "Echo volume:"
-msgstr ""
+msgstr "Volume echo:"
 
 #: src/gui/sysConf.cpp:347
 msgid "Original (DMG)"
@@ -14375,54 +14386,54 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:364
 msgid "Wave channel orientation:"
-msgstr ""
+msgstr "Orientasi gelombang:"
 
 #: src/gui/sysConf.cpp:371
 msgid "Inverted"
-msgstr ""
+msgstr "Terbalik"
 
 #: src/gui/sysConf.cpp:378
 msgid "Exact data (inverted)"
-msgstr ""
+msgstr "Data persis (terbalik)"
 
 #: src/gui/sysConf.cpp:382
 msgid "Exact output (normal)"
-msgstr ""
+msgstr "Output persis (normal)"
 
 #: src/gui/sysConf.cpp:388
 msgid ""
 "Pretty please one more compat flag when I use arpeggio and my sound length"
-msgstr ""
+msgstr "Satu lagi aturan kompatibilitas untuk arpegio dan panjang suara"
 
 #: src/gui/sysConf.cpp:405 src/gui/sysConf.cpp:438
 msgid "DAC bit depth (reduces output rate):"
-msgstr ""
+msgstr "Kedalaman bit DAC (mengurangi laju output):"
 
 #: src/gui/sysConf.cpp:426 src/gui/sysConf.cpp:1268 src/gui/sysConf.cpp:1919
 msgid "Volume scale:"
-msgstr ""
+msgstr "Skala volume:"
 
 #: src/gui/sysConf.cpp:432
 msgid "Mix buffers (allows longer echo delay):"
-msgstr ""
+msgstr "Campurkan buffer (memungkinkan delay echo lebih panjang):"
 
 #: src/gui/sysConf.cpp:444
 msgid "Channel limit:"
-msgstr ""
+msgstr "Batasan jumlah channel:"
 
 #: src/gui/sysConf.cpp:450
 msgid "Sample rate:"
-msgstr ""
+msgstr "Laju sampel:"
 
 #: src/gui/sysConf.cpp:460
 #, c-format
 msgid "Actual sample rate: %d Hz"
-msgstr ""
+msgstr "Laju sampel sebenarnya: %d Hz"
 
 #: src/gui/sysConf.cpp:462
 #, c-format
 msgid "Max mixer CPU usage: %.0f%%"
-msgstr ""
+msgstr "Penggunaan CPU maksimum: %.0f%%"
 
 #: src/gui/sysConf.cpp:488
 msgid "NTSC (3.58MHz)"
@@ -14438,11 +14449,11 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:500
 msgid "Half NTSC (1.79MHz)"
-msgstr ""
+msgstr "Setengah NTSC (1.79MHz)"
 
 #: src/gui/sysConf.cpp:506
 msgid "Patch set:"
-msgstr ""
+msgstr "Set suara:"
 
 #: src/gui/sysConf.cpp:528
 msgid "Ignore top/hi-hat frequency changes"
@@ -14945,7 +14956,7 @@ msgstr ""
 
 #: src/gui/sysConf.cpp:1868
 msgid "Interpolation:"
-msgstr ""
+msgstr "Interpolasi:"
 
 #: src/gui/sysConf.cpp:1874 src/gui/waveEdit.cpp:38
 msgid "Linear"
