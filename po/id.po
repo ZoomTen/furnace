@@ -4058,36 +4058,36 @@ msgstr ""
 
 #: src/gui/exportOptions.cpp:137
 msgid "settings:"
-msgstr ""
+msgstr "pengaturan:"
 
 #: src/gui/exportOptions.cpp:138
 msgid "format version"
-msgstr ""
+msgstr "versi format"
 
 #: src/gui/exportOptions.cpp:146 src/gui/exportOptions.cpp:238
 #: src/gui/insEdit.cpp:362
 msgid "loop"
-msgstr ""
+msgstr "berulang"
 
 #: src/gui/exportOptions.cpp:148
 msgid "loop trail:"
-msgstr ""
+msgstr "ekor pengulangan"
 
 #: src/gui/exportOptions.cpp:150
 msgid "auto-detect"
-msgstr ""
+msgstr "otomatis"
 
 #: src/gui/exportOptions.cpp:153
 msgid "add one loop"
-msgstr ""
+msgstr "tambah satu kali pengulangan"
 
 #: src/gui/exportOptions.cpp:156
 msgid "custom"
-msgstr ""
+msgstr "kustom"
 
 #: src/gui/exportOptions.cpp:167
 msgid "add pattern change hints"
-msgstr ""
+msgstr "tambah petunjuk pergantian pola"
 
 #: src/gui/exportOptions.cpp:170
 msgid ""
@@ -4102,11 +4102,21 @@ msgid ""
 "- pp: pattern index (one per channel)\n"
 "\n"
 "pattern indexes are ordered as they appear in the song."
-msgstr ""
+msgstr "menambah blok data saat pola berganti.\n"
+"dapat berguna jika kamu sedang menulis kode pemutar musik.\n\n"
+"format blok data pergantian pola adalah:\n"
+"67 66 FE ll ll ll ll 01 oo rr pp pp pp ...\n"
+"- ll: panjang, angka little-endian 32-bit\n"
+"- oo: urutan\n"
+"- rr: baris pertama (karena efek 0Dxx dapat memilih baris pertama)\n"
+"- pp: indeks pola (satu per channel)\n"
+"\n"
+"indeks pola diurutkan sesuai dengan kemunculan pada lagu."
+
 
 #: src/gui/exportOptions.cpp:183
 msgid "direct stream mode"
-msgstr ""
+msgstr "mode aliran langsung"
 
 #: src/gui/exportOptions.cpp:186
 msgid ""
@@ -4114,29 +4124,31 @@ msgid ""
 "\n"
 "allows for volume/direction changes when playing samples,\n"
 "at the cost of a massive increase in file size."
-msgstr ""
+msgstr "diwajibkan untuk ekspor DualPCM dan MSM6258.\n\n"
+"memungkinkan perubahan volume/arah saat memainkan sampel,\n"
+"namun ukuran file akan menjadi sangat besar."
 
 #: src/gui/exportOptions.cpp:191
 msgid "chips to export:"
-msgstr ""
+msgstr "chip yang akan diekspor:"
 
 #: src/gui/exportOptions.cpp:200
 #, c-format
 msgid "this chip is only available in VGM %d.%.2x and higher!"
-msgstr ""
+msgstr "chip ini hanya tersedia di VGM %d.%.2x atau lebih baru!"
 
 #: src/gui/exportOptions.cpp:204
 msgid "this chip is not supported by the VGM format!"
-msgstr ""
+msgstr "chip ini tidak didukung oleh format VGM!"
 
 #: src/gui/exportOptions.cpp:210
 #, c-format
 msgid "select the chip you wish to export, but only up to %d of each type."
-msgstr ""
+msgstr "pilih chip yang ingin diekspor, namun setiap tipe maksimal %d."
 
 #: src/gui/exportOptions.cpp:222
 msgid "nothing to export"
-msgstr ""
+msgstr "tidak ada yang diekspor"
 
 #: src/gui/exportOptions.cpp:233
 msgid "Commander X16 Zsound Music File"
@@ -4173,7 +4185,7 @@ msgstr ""
 
 #: src/gui/exportOptions.cpp:293
 msgid "this option exports the song to a text file.\n"
-msgstr ""
+msgstr "opsi ini mengekspor lagu ke dalam file teks.\n"
 
 #: src/gui/exportOptions.cpp:310
 msgid ""
@@ -4223,11 +4235,11 @@ msgstr ""
 #: src/gui/exportOptions.cpp:385 src/gui/settings.cpp:2901
 #: src/gui/settings.cpp:3833
 msgid "Text"
-msgstr ""
+msgstr "Teks"
 
 #: src/gui/exportOptions.cpp:389
 msgid "Command Stream"
-msgstr ""
+msgstr "Aliran Perintah"
 
 #: src/gui/exportOptions.cpp:393
 msgid "DMF"
@@ -7200,7 +7212,7 @@ msgstr ""
 
 #: src/gui/settings.cpp:2112
 msgid "Are you sure you want to reset the keyboard settings?"
-msgstr ""
+msgstr "Yakin ingin mengembalikan pengaturan keyboard?"
 
 #: src/gui/settings.cpp:2114
 msgid "Global hotkeys"
@@ -8235,11 +8247,11 @@ msgstr ""
 
 #: src/gui/settings.cpp:3652 src/gui/settings.cpp:3879
 msgid "Oscilloscope"
-msgstr ""
+msgstr "Osiloskop"
 
 #: src/gui/settings.cpp:3654
 msgid "Rounded corners"
-msgstr ""
+msgstr "Ujung-ujung bulat"
 
 #: src/gui/settings.cpp:3660 src/gui/settings.cpp:3838
 #: src/gui/settings.cpp:3880
@@ -8292,7 +8304,7 @@ msgstr ""
 
 #: src/gui/settings.cpp:3747
 msgid "Are you sure you want to reset the color scheme?"
-msgstr ""
+msgstr "Yakin ingin mengembalikan skema warna default?"
 
 #: src/gui/settings.cpp:3750
 msgid "Guru mode"
@@ -9896,7 +9908,10 @@ msgid ""
 "compatibility.\n"
 "it is recommended to disable most of these unless you rely on specific "
 "quirks."
-msgstr ""
+msgstr "pengaturan-pengaturan ini bertujuan untuk memberi kompatibilitas yang "
+"lebih baik dengan DefleMask/Furnace versi lawas.\n"
+"sebaiknya matikan saja sebagian besar dari pengaturan ini kecuali kamu perlu "
+"kelakuan-kelakuan tertentu."
 
 #: src/gui/compatFlags.cpp:34 src/gui/compatFlags.cpp:310
 msgid "DefleMask"
@@ -9904,7 +9919,7 @@ msgstr ""
 
 #: src/gui/compatFlags.cpp:35
 msgid "Limit slide range"
-msgstr ""
+msgstr "Batasi rentang penggeseran"
 
 #: src/gui/compatFlags.cpp:37
 msgid ""
@@ -10683,15 +10698,15 @@ msgstr ""
 
 #: src/gui/guiConst.cpp:595
 msgid "Oscilloscope (master)"
-msgstr ""
+msgstr "Osiloskop (keseluruhan)"
 
 #: src/gui/guiConst.cpp:597
 msgid "Statistics"
-msgstr ""
+msgstr "Statistik"
 
 #: src/gui/guiConst.cpp:598
 msgid "Compatibility Flags"
-msgstr ""
+msgstr "Pengaturan Kompatibilitas"
 
 #: src/gui/guiConst.cpp:600
 msgid "Song Comments"
@@ -12564,7 +12579,7 @@ msgstr ""
 
 #: src/gui/gui.cpp:1929 src/gui/gui.cpp:1939
 msgid "Export Command Stream"
-msgstr ""
+msgstr "Ekspor Aliran Perintah"
 
 #: src/gui/gui.cpp:1930
 msgid "text file"
@@ -12933,7 +12948,7 @@ msgstr "hapus riwayat"
 
 #: src/gui/gui.cpp:4226
 msgid "Are you sure you want to clear the recent file list?"
-msgstr ""
+msgstr "Yakin ingin menghapus daftar riwayat file?"
 
 #: src/gui/gui.cpp:4241
 msgid "save as..."
@@ -15051,15 +15066,15 @@ msgstr ""
 
 #: src/gui/insEdit.cpp:5886
 msgid "Oscillator Sync"
-msgstr ""
+msgstr "Osilator Sinkron"
 
 #: src/gui/insEdit.cpp:5890
 msgid "Enable filter"
-msgstr ""
+msgstr "Nyalakan filter"
 
 #: src/gui/insEdit.cpp:5891
 msgid "Initialize filter"
-msgstr ""
+msgstr "Nilai awal filter"
 
 #: src/gui/insEdit.cpp:5894 src/gui/insEdit.cpp:5897 src/gui/insEdit.cpp:6951
 #: src/gui/insEdit.cpp:7215 src/gui/insEdit.cpp:7476
